@@ -1,0 +1,54 @@
+@page
+@model project.Pages.myadmin.UpdateExperienceModel
+@{
+}
+
+<div class="container">
+<form method="post">
+    <div class="row justify-content-center">
+         <div class="col-md-4">
+            <h1>
+                Update Experience
+            </h1>
+       </div>
+    </div>
+    
+    <div class="row justify-content-center">
+         <div class="col-md-4">
+             <label  class="form-label">Degree</label>
+             <input  class="form-control" asp-for="experience.Degree">
+             <input  class="form-control" hidden asp-for="experience.Id">
+       </div>
+    </div>
+     <div class="row justify-content-center">
+         <div class="col-md-4">
+             <label  class="form-label">Location</label>
+             <input  class="form-control" asp-for="experience.location">
+       </div>
+    </div>
+     <div class="row justify-content-center">
+         <div class="col-md-4">
+             <label  class="form-label">Start year</label>
+             <input  class="form-control"asp-for="experience.start year>
+       </div>
+    </div>
+     <div class="row justify-content-center">
+         <div class="col-md-4">
+             <label  class="form-label">End year</label>
+             <input  class="form-control" asp-for="experience.end year">
+       </div>
+    </div>
+    
+     <div class="row justify-content-center">
+         <div class="col-md-4">
+             <label  class="form-label">Description</label>
+             <input  class="form-control" asp-for="experience.desc">
+       </div>
+    </div>
+     <div class="row justify-content-center">
+         <div class="col-md-4">
+             <input type="submit" value="Update Experience" class="btn btn-primary"/>
+       </div>
+    </div>
+</form>
+</div>
