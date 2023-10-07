@@ -1,8 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 
 namespace project.Model{
-    public class Data
-    {
+    
 public class Appdbcontext: DbContext
 {
     public Appdbcontext(DbContextOptions<Appdbcontext>options): base(options)
@@ -33,4 +32,3 @@ public class Appdbcontext: DbContext
 
 
     }
-}

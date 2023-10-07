@@ -1,9 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using project.Model;
-using static project.Model.Data;
 namespace project.Pages.myadmin;
-{
+
 public class AddExperienceModel : PageModel
 {
     Appdbcontext db;
@@ -22,5 +21,4 @@ public class AddExperienceModel : PageModel
     db.savechanges();
     return RedirectToPage("ShowEducation");
     }
-}
 }
