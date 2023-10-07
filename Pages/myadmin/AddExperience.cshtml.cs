@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using project.Model;
+using project.Model.Data;
 namespace project.Pages.myadmin;
 
 public class AddExperienceModel : PageModel
