@@ -1,5 +1,5 @@
 @page
-@model project.Pages.myadmin.AddEducationModel
+@model Pages.myadmin.ShowEducationModel
 @{
 
 }
@@ -19,12 +19,12 @@
     </tr>
   </thead>
   <tbody>
-    @foreach(var item in Model.education)
+    @foreach(var item in Model.Educations)
     {
     <tr>
       <th scope="row">@item.Id</th>
       <td>@item.Degree</td>
-      <td>@item.startyear</td>
+      <td>@item.Startyear</td>
       <td>@item.Endyear</td>
       <td>@item.InstituteName</td>
       <td>@item.Desc</td>

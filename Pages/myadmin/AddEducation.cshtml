@@ -1,53 +1,59 @@
 @page
-@model  project.Pages.myadmin.AddEducationModel
+@model Pages.myadmin.AddEducationModel
 @{ 
+       
 }
  
- <div class="container">
-<form method="post">
-    <div class="row justify-content-center">
-         <div class="col-md-4">
-            <h1>
-                Add Education
-            </h1>
-       </div>
-    </div>
-    
-    <div class="row justify-content-center">
-         <div class="col-md-4">
-             <label  class="form-label">Degree</label>
-             <input  class="form-control" asp-for="education.Degree">
-       </div>
-    </div>
-     <div class="row justify-content-center">
-         <div class="col-md-4">
-             <label  class="form-label">Start year</label>
-             <input  class="form-control"asp-for="education.start year>
-       </div>
-    </div>
-     <div class="row justify-content-center">
-         <div class="col-md-4">
-             <label  class="form-label">End year</label>
-             <input  class="form-control" asp-for="education.end year">
-       </div>
-    </div>
-     <div class="row justify-content-center">
-         <div class="col-md-4">
-             <label  class="form-label">Institute Name</label>
-             <input  class="form-control" asp-for="education.institute name">
-       </div>
-    </div>
-     <div class="row justify-content-center">
-         <div class="col-md-4">
-             <label  class="form-label">Description</label>
-             <input  class="form-control" asp-for="education.desc">
-       </div>
-    </div>
-     <div class="row justify-content-center">
-         <div class="col-md-4">
-             <input type="submit" value="AddEducation" class="btn btn-primary"/>
-       </div>
-    </div>
-</form>
-</div>
+<div class="container">
+    <form method="post">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <h1>
+                    Add Education
+                </h1>
+            </div>
+        </div>
 
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Degree</label>
+                <input class="form-control" asp-for="education.Degree">
+            </div>
+        </div>
+
+         <div class="row justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Start Year</label>
+                <input class="form-control" asp-for="education.Startyear">
+            </div>
+        </div>
+
+         <div class="row justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">End Year</label>
+                <input class="form-control" asp-for="education.Endyear">
+            </div>
+        </div>
+
+         <div class="row justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Institute Name</label>
+                <input class="form-control" asp-for="education.InstituteName">
+            </div>
+        </div>
+
+         <div class="row justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Description</label>
+                <input class="form-control" asp-for="education.Desc">
+            </div>
+        </div>
+
+         <div class="row justify-content-center">
+            <div class="col-md-4">
+               
+                <input type="submit" value="Add Education" class="btn btn-primary">
+            </div>
+        </div>
+    </form>
+</div>
