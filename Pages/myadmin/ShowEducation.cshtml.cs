@@ -4,18 +4,18 @@ using project.Model;
 using static project.Model.Data;
 
 namespace project.Pages.myadmin;
-{
+
 public class ShowEducationModel : PageModel
 {
     Appdbcontext db;
-    public List<Education> education{get;set;}
+    public List<Education> Educations { get; set; }
     public ShowEducationModel(Appdbcontext _db)
     {
       db = _db;
     }
     public void OnGet()
     {
-      education =db.tbl_Education.ToList();
+      Educations = db.tbl_Education.ToList();
     }
     public IActionResult OnGetDelete(int Id)
     {
@@ -25,4 +25,4 @@ public class ShowEducationModel : PageModel
       return RedirectToPage("ShowEducation");
     }
 }
-}
+

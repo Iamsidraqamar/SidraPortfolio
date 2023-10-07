@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using project.Model;
 using static project.Model.Data;
 namespace project.Pages.myadmin;
-{
+
 public class AddEducationModel : PageModel
 {
     Appdbcontext db;
@@ -22,5 +22,4 @@ public class AddEducationModel : PageModel
     db.savechanges();
     return RedirectToPage("ShowEducation");
     }
-}
 }
